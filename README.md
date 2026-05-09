@@ -594,19 +594,73 @@ This project is being built to:
 
 ---
 
-# Repositories
+# Repository Structure
 
-## Backend Repository
+A mono-root structure will be used where both frontend and backend projects live inside one parent workspace.
+
+```text
+job-portal/
+│
+├── job-portal-api/
+├── job-portal-web/
+├── .gitignore
+├── README.md
+└── docs/
+```
+
+---
+
+## Backend Folder
 
 ```bash
 job-portal-api
 ```
 
-## Frontend Repository
+Responsibilities:
+- Laravel API
+- Business logic
+- Database
+- Authentication
+- Queues
+- Testing
+
+---
+
+## Frontend Folder
 
 ```bash
 job-portal-web
 ```
+
+Responsibilities:
+- React frontend
+- UI components
+- Dashboard
+- API integration
+- Protected routes
+
+---
+
+## Root-Level Files
+
+### `.gitignore`
+Contains:
+- node_modules
+- vendor
+- .env
+- build files
+- cache files
+
+### `README.md`
+Contains:
+- complete project overview
+- setup guide
+- architecture explanation
+- learning goals
+- documentation links
+
+### `docs/`
+Contains all project documentation.
 
 ---
 
@@ -819,22 +873,3 @@ Arslan Ali
 
 MIT
 ```
-
----
-
-# 15. Immediate Next Step
-
-Start with:
-
-1. Create GitHub repositories
-2. Initialize Laravel backend
-3. Initialize React frontend
-4. Setup TailwindCSS
-5. Push initial commits
-6. Create DAY-01 log
-7. Publish first Medium article
-
-Suggested article title:
-
-**“Building an Advanced Laravel + React Job Portal for Interview Mastery — Day 1”**
-
