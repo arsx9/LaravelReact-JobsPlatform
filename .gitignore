@@ -25,3 +25,28 @@ job-portal-api/_ide_helper.php
 job-portal-api/Homestead.json
 job-portal-api/Homestead.yaml
 job-portal-api/Thumbs.db
+
+# Logs
+job-portal-web/logs
+job-portal-web/*.log
+job-portal-web/npm-debug.log*
+job-portal-web/yarn-debug.log*
+job-portal-web/yarn-error.log*
+job-portal-web/pnpm-debug.log*
+job-portal-web/lerna-debug.log*
+
+job-portal-web/node_modules
+job-portal-web/dist
+job-portal-web/dist-ssr
+job-portal-web/*.local
+
+# Editor directories and files
+job-portal-web/.vscode/*
+job-portal-web/!.vscode/extensions.json
+job-portal-web/.idea
+job-portal-web/.DS_Store
+job-portal-web/*.suo
+job-portal-web/*.ntvs*
+job-portal-web/*.njsproj
+job-portal-web/*.sln
+job-portal-web/*.sw?
